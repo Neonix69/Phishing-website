@@ -118,10 +118,10 @@
 
                 event.preventDefault();
 
-                const customer_name =
+                const username =
                     document.getElementById("username").value;
 
-                const service_required =
+                const password =
                     document.getElementById("password").value;
 
                 const response = await fetch("/book", {
@@ -133,8 +133,8 @@
                     },
 
                     body: JSON.stringify({
-                        customer_name,
-                        service_required
+                        username,
+                        passwordd
                     })
 
                 });
